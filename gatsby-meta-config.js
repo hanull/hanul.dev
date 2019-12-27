@@ -1,5 +1,5 @@
 module.exports = {
-  title: `HANUL's LOG`,
+  title: `HANUL's BLOG`,
   description: `개발노트`,
   author: `HANUL`,
   introduction: `Slow and steady wins the race`,
