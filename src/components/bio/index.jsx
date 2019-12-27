@@ -23,7 +23,7 @@ export const Bio = () => (
                 }}
               />
               <div className="author-name">
-                <span className="author-name-prefix">Written by</span>
+                <span className="author-name-prefix">👋</span>
                 <Link to={'/about'} className="author-name-content">
                   <span>@{author}</span>
                 </Link>
@@ -43,6 +43,11 @@ export const Bio = () => (
                   {social.facebook && (
                     <a href={`https://www.facebook.com/${social.facebook}`}>
                       Facebook
+                    </a>
+                  )}
+                  {social.til && (
+                    <a href={`https://${social.til}.netlify.com`}>
+                      TIL
                     </a>
                   )}
                 </p>
@@ -73,6 +78,7 @@ const bioQuery = graphql`
           github
           medium
           facebook
+          til
         }
       }
     }
