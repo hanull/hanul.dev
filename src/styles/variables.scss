@@ -1,5 +1,5 @@
 // app
-$theme-gradient: linear-gradient(72deg, #291e95, #cc007a);
+$theme-gradient: linear-gradient(72deg, #CC95C0, #DBD4B4, #7AA1D2);
 $top-header-text-color: #fff;
 
 /**
@@ -10,6 +10,7 @@ $top-header-text-color: #fff;
 $light-background-color: #fff;
 $light-text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
 $light-hover-text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+$light-hover-background-color: rgba(0, 30, 84, 0.07);
 
 // index
 $dimmed-color: #eef5db;
@@ -22,6 +23,7 @@ $light-gray: #aaa;
 $navigator-text-color: #cc007a;
 $navigator-background-color: #fceff7;
 $blockquote-text-color: #999;
+$light-post-time-color: darkgray;
 
 // code
 $inline-dimmed-color: #ece5f1;
@@ -47,6 +49,7 @@ $dark-middle-font-color: #d8d7d7;
 
 $dark-text-shadow: 0 0 0.1px rgba(255, 255, 255, 0.3);
 $dark-hover-text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+$dark-post-time-color: rgba(30, 144, 255, 0.39);
 
 $dark-category-item-color: #282c35;
 $dark-category-background-color: #24272c;
