@@ -1,6 +1,6 @@
 module.exports = {
   title: `HANUL's BLOG`,
-  description: `°³¹ß³ëÆ®`,
+  description: `개발노트`,
   author: `HANUL`,
   introduction: `Slow and steady wins the race`,
   siteUrl: `https://hanul-dev.netlify.com`, // Your blog site url
