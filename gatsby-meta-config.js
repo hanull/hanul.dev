@@ -1,9 +1,9 @@
 module.exports = {
-  title: `HANULLOG`,
+  title: `HANUL's LOG`,
   description: `개발노트`,
   author: `HANUL`,
   introduction: `Slow and steady wins the race`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://hanul-dev.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `hanull`, // Your GitHub account
