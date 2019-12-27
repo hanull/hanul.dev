@@ -1,6 +1,6 @@
 module.exports = {
   title: `HANUL's BLOG`,
-  description: `���߳�Ʈ`,
+  description: `°³¹ß³ëÆ®`,
   author: `HANUL`,
   introduction: `Slow and steady wins the race`,
   siteUrl: `https://hanul-dev.netlify.com`, // Your blog site url
@@ -9,6 +9,7 @@ module.exports = {
     github: `hanull`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
+    til:`hanullearned`,
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
