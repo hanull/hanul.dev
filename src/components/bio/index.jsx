@@ -45,6 +45,11 @@ export const Bio = () => (
                       Facebook
                     </a>
                   )}
+		  {social.til && (
+                    <a href={`https://${social.til}.netlify.com`}>
+                      TIL
+                    </a>
+                  )}
                 </p>
               </div>
             </div>
@@ -73,6 +78,7 @@ const bioQuery = graphql`
           github
           medium
           facebook
+          til
         }
       }
     }
