@@ -1,4 +1,4 @@
-module.exports = {
+﻿module.exports = {
   title: `HANUL's BLOG`,
   description: `개발노트`,
   author: `HANUL`,
@@ -9,7 +9,6 @@ module.exports = {
     github: `hanull`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
-    til:`hanullearned`,
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
