@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 
@@ -45,11 +45,6 @@ export const Bio = () => (
                       Facebook
                     </a>
                   )}
-                  {social.til && (
-                    <a href={`https://${social.til}.netlify.com`}>
-                      TIL
-                    </a>
-                  )}
                 </p>
               </div>
             </div>
@@ -78,7 +73,6 @@ const bioQuery = graphql`
           github
           medium
           facebook
-          til
         }
       }
     }
