@@ -1,9 +1,7 @@
 # HANUL LOG
-<div align="center">
 
 ![](./assets/hanul-dev.png)
 
-</div>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c4cf4049-2e26-4c39-a960-53e952428b7b/deploy-status)](https://app.netlify.com/sites/todayejlearned/deploys) [![Blog](https://img.shields.io/badge/Blog-hanullearned.netlify.com-yellow.svg)](https://hanullearned.netlify.com/)
 
