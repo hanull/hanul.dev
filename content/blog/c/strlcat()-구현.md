@@ -10,6 +10,7 @@ draft: false
 ```c++
 size_t	strlcat(char *dst, const char *src, size_t size)
 ```
+- strlcat은 문자열 src 를 dst 의 끝에 추가해주는 함수이다.
 
 - dst 의 마지막 위치에 src 을 size - strlen(dst) - 1 만큼 복사하고, 끝에 널문자를 삽입한다.
 
@@ -49,3 +50,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (result);
 }
 ```
+
+> [참고](https://www.unix.com/man-page/mojave/3/strlcat/)
