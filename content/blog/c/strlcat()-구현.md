@@ -19,6 +19,7 @@ size_t	strlcat(char *dst, const char *src, size_t size)
 - 여기서  size는 `대상 버퍼의 크기`이고 size와 dst의 크기에 따라 반환값이 달라지게 된다.
 
   > size가 dst의 크기보다 작을 때, `strlen(src) + size` 를 반환한다.
+
   > size가 dst의 크기보다 클 때, `strlen(src) + strlen(dst)`를 반환한다.
 
 
