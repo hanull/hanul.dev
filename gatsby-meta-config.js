@@ -24,7 +24,7 @@
     `review`,
   ],
   comment: {
-    disqusShortName: '', // Your disqus-short-name. check disqus.com.
+    disqusShortName: 'hanul', // Your disqus-short-name. check disqus.com.
     utterances: 'hanull/hanul.dev', // Your repository for archive comment
   },
   configs: {
