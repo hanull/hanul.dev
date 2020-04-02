@@ -1,5 +1,5 @@
 ---
-title: 싱글톤 패턴
+title: "[Design-Pattern] 싱글톤 패턴"
 date: 2020-03-22 16:10:71
 category: Design-Pattern
 draft: false

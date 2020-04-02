@@ -1,5 +1,5 @@
 ---
-title: strlcat() 구현
+title: "[c] strlcat() 구현"
 date: 2020-02-29 02:02:88
 category: c
 draft: false

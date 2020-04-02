@@ -1,5 +1,5 @@
 ---
-title: "[아이템6] 불필요한 객체 생성을 피해라"
+title: "[effective-java] (아이템6) 불필요한 객체 생성을 피해라"
 date: 2020-04-01 13:04:50
 category: effective-java
 draft: false

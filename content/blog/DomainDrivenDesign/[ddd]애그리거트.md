@@ -1,5 +1,5 @@
 ---
-title: 애그리거트
+title: "[ddd]애그리거트"
 date: 2020-01-05 03:01:35
 category: domaindrivendesign
 draft: false

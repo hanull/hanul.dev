@@ -1,5 +1,5 @@
 ---
-title: memcopy vs memmove
+title: "[c] memcopy vs memmove"
 date: 2020-02-28 15:02:11
 category: c
 draft: false
