@@ -12,7 +12,17 @@
     til:`hanullearned`,
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`],
+  keywords: [
+    `blog`
+    `devlog`,
+    `web`,
+    `development`,
+    `frontend`,
+    `backend`,
+    `javascript`,
+    `books`,
+    `review`,
+  ],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: 'hanull/hanul.dev', // Your repository for archive comment
