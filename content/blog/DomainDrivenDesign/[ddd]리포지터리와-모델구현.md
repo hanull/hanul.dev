@@ -1,5 +1,5 @@
 ---
-title: "[ddd] 리포지터리와 모델구현"
+title: "[ddd]리포지터리와 모델구현"
 date: 2020-03-06 18:01:57
 category: domaindrivendesign
 draft: false

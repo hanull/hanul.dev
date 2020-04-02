@@ -1,5 +1,5 @@
 ---
-title: "[ddd] 도메인 모델 시작"
+title: "[ddd]도메인 모델 시작"
 date: 2019-12-28 18:12:01
 category: domaindrivendesign
 draft: false

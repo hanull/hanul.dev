@@ -1,5 +1,5 @@
 ---
-title: "[linux] 리눅스 자주 쓰는 명령어"
+title: "[linux]리눅스 자주 쓰는 명령어"
 date: 2020-01-21 01:01:38
 category: linux
 draft: false

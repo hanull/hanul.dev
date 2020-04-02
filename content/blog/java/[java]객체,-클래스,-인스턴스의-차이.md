@@ -1,5 +1,5 @@
 ---
-title: "[java] 객체, 클래스, 인스턴스의 차이"
+title: "[java]객체, 클래스, 인스턴스의 차이"
 date: 2020-03-22 16:03:85
 category: java
 draft: false
