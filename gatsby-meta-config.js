@@ -4,7 +4,7 @@
   author: `HANUL`,
   introduction: `Slow and steady wins the race`,
   siteUrl: `https://hanul-dev.netlify.com`, // Your blog site url
-  sitemapPath: https://hanul-dev.netlify.com/sitemap.xml`,
+  sitemapPath: `https://hanul-dev.netlify.com/sitemap.xml`,
   robotsPolicy: [{ userAgent: '*', allow: '/' }],
   social: {
     twitter: ``, // Your Twitter account
