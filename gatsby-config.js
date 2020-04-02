@@ -88,9 +88,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://hanul-dev.netlify.com/',
-        sitemap: 'https://hanul-dev.netlify.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
+        host: metaConfig.siteUrl,
+        sitemap: metaConfig.sitemapPath,
+        policy: metaConfig.robotsPolicy,
       },
     },
     {
