@@ -1,5 +1,5 @@
 ---
-title: git-저장소마다 다른 계정 정보 사용하기
+title: "[git] git-저장소마다 다른 계정 정보 사용하기"
 date: 2020-03-13 16:03:48
 category: git
 draft: false
