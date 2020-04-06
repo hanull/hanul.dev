@@ -1,5 +1,5 @@
 ---
-title: "[java]자바가상머신(JVM)이란 무엇인가?"
+title: 자바가상머신(JVM)이란 무엇인가?
 date: 2020-03-30 18:03:47
 category: java
 draft: false

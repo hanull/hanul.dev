@@ -1,5 +1,5 @@
 ---
-title: "[c]문자열 상수 vs 문자열 배열"
+title: 문자열 상수 vs 문자열 배열
 date: 2020-02-28 15:02:61
 category: c
 draft: false

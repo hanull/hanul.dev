@@ -1,5 +1,5 @@
 ---
-title: "[git] git reset"
+title: git reset
 date: 2020-01-22 19:01:32
 category: git
 draft: false
