@@ -3,12 +3,13 @@
   description: `개발노트`,
   author: `HANUL`,
   introduction: `Slow and steady wins the race`,
-  siteUrl: `https://hanul-dev.netlify.com`, // Your blog site url
+  siteUrl: `https://hanul-dev.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `hanull`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
+    til:`hanullearned`,
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [
