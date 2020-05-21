@@ -8,7 +8,7 @@ draft: false
 ## 연결 리스트(Linked List)
 `연결 리스트란` 각 노드가 서로 연결되어 있는 방식으로 데이터가 저장돼 있는 추상적 자료형이다. 각 노드는 `데이터 필드`와 `다음 노드에 대한 참조`로 구성되어 있다. 마지막 노드의 포인터는 NULL 값을 갖는다.
 
-![](../../assets/Linkedlist.png)
+![](https://github.com/hanull/TIL/blob/master/DataStructure/img/Linkedlist.png)
 
 
 ### 왜 배열이 아닌 연결 리스트를 사용할까??
