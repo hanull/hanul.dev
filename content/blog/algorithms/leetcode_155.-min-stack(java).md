@@ -1,5 +1,5 @@
 ---
-title: LeeCode_155. Min Stack(java)
+title: LeetCode_155. Min Stack(java)
 date: 2020-05-28 00:05:25
 category: algorithms
 draft: false
