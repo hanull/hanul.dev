@@ -6,39 +6,36 @@ draft: false
 ---
 
 연산을 수행할 때 사람들은 (2+3)*4 처럼 중위 표기법을 사용하지만, 컴퓨터에서는 후위 표기법을 사용하여 계산을 수행한다.
-후위 표기법이란? 연산자를 피연산자 뒤에 놓는 방법이다. 그리고 괄호가 없어도 계산 순서가 일정하다. ex) (2+3)*4  ===> 23+4*
+후위 표기법이란? 연산자를 피연산자 뒤에 놓는 방법이다. 그리고 괄호가 없어도 계산 순서가 일정하다. ex) (2+3)*4 --> 23+4*
+
 이제 중위 표기법을 어떻게 후위 표기법으로 바꾸고 계산을 수행하는지 보자.
 
 
 ## <접근법>
 컴퓨터에서의 수식 계산은 `(1)중위 수식을 후위 수식으로 바꾸고`, `(2)후위 수식을 계산` 하는 두 과정으로 이루어진다.
 
-### (1) 중위 수식 -> 후위 수식
+#### (1) 중위 수식 -> 후위 수식
 1. 수식의 요소를 하나씩 읽는다.
 2. 숫자일 경우, 문자열(postFix)에 담는다.
-3. 연산자일 경우, 스택에 쌓는다.
-
-  - 만약 해당 연산자보다 스택 최상위 노드에 있는 연산자의 우선순위가 더 높은 경우, 최상위 노드를 pop()하고 문자열(postFix)에 추가 한다.
-
-  - 그리고 해당 연산자를 스택에 쌓는다.
-
+3. 연산자일 경우, 스택에 쌓는다. `만약 해당 연산자보다 스택 최상위 노드에 있는 연산자의 우선순위가 더 높은 경우, 최상위 노드를 pop()하고 문자열(postFix)에 추가 한다. 그리고 해당 연산자를 스택에 쌓는다.`
 4. '(' 일 경우, 가중치에 관계없이 무조건 스택에 쌓는다.
 5.  ')' 를 만나는 순간, 스택 최상위 노드부터 '(' 를 만날 때 까지 pop()하고 문자열에 추가 한다. 단, '(' 는 문자열(postFix)에 추가하지 않는다.
 6. 더 읽을 수식이 없다면 끝내고, 있다면 1번부터 반복 수행
 
 
 ***<연산자 우선순위>***
-- *, / : 1순위 (가중치가 가장 큼)
-- +, - : 2순위
-- (    : 3순위
+- *, /	: 1순위 (가중치가 가장 큼)
+- +, -	: 2순위
+- (		: 3순위
 
 
-### (2) 후위 수식 계산
+#### (2) 후위 수식 계산
 1. 변경 된 후위 수식의 요소를 하나씩 읽는다.
 2. 숫자일 경우, 스택에 쌓는다.
 3. 연산자를 만나는 순간, 스택에서 2개의 숫자를 pop() 한 뒤, 해당 연산자를 통해 계산을 수행한다.
 4. 계산한 값을 다시 스택에 쌓는다.
 5. 스택 사이즈만큼 반복 수행하면, 스택에는 하나의 값이 담겨있게 되며, 최종적으로 후위 수식 계산값이 된다.
+
 
 
 ## <고민했던 부분>
@@ -50,17 +47,27 @@ draft: false
   - input은 int max를 초과하지 않는다고 가정하였고, 계산 결과가 int를 초과할 것을 생각하여 long형으로 변경하였다.
 
 
+
 ## <구현한 메소드>
 
 ```
-public static String infix_to_postfix(String input);			// 중위 수식을 후위 수식으로 변경
-public static boolean isDigit(char ch);							// 해당 문자가 숫자인지 검사
-public static boolean isOperator(char operator);				// 해당 문자가 연산자인지 검사
-public static int priority(char operator);						// 해당 문자의 우선순위 확인
+// 중위 수식을 후위 수식으로 변경
+public static String infix_to_postfix(String input);
 
-public static long tmpCal(long tmp1, long tmp2, char operator);	//
-public static long cal(String postFix);							// 후위 수식을 활용하며 최종값을 계산
+// 해당 문자가 숫자인지 검사
+public static boolean isDigit(char ch);
+
+// 해당 문자가 연산자인지 검사
+public static boolean isOperator(char operator);
+
+// 해당 문자의 우선순위 확인
+public static int priority(char operator);
+
+// 후위 수식을 공백을 기준으로 스플릿 한 뒤, 계산 수행
+public static long tmpCal(long tmp1, long tmp2, char operator);
+public static long cal(String postFix);
 ```
+
 
 
 ## <구현 코드>
@@ -73,19 +80,22 @@ public static long cal(String postFix);							// 후위 수식을 활용하며 �
     int index = 0;
     while (index < inputLength) {
       char operator = input.charAt(index);
-      if (isDigit(operator)) {   // 숫자 일 때, 숫자가 끝날 때 까지 문자열에 추가
+	  // 숫자 일 때, 숫자가 끝날 때 까지 문자열에 추가
+      if (isDigit(operator)) {
         while (index < inputLength && isDigit(input.charAt(index))) {
           posFix+=input.charAt(index);
           index++;
         }
         posFix+=' ';
       }
-      else {      // 연산자 일 때, 스택에 푸시
+	  // 연산자 일 때, 스택에 푸시
+      else {
         if (operator == '(') {
           stack.push(operator);
           index++;
         }
-        else if (operator == ')') { // 닫힌 괄호( ')' )를 만나면, 스택에서 열린 괄호( '(' ) 나올 때 까지 연산자 pop
+		// 닫힌 괄호( ')' )를 만나면, 스택에서 열린 괄호( '(' ) 나올 때 까지 연산자 pop
+        else if (operator == ')') {
           while (stack.peek()!='(') {
             posFix+=stack.pop();
             posFix+=' ';
@@ -93,7 +103,8 @@ public static long cal(String postFix);							// 후위 수식을 활용하며 �
           stack.pop();
           index++;
         }
-        else if (isOperator(operator)) { // 연산자라면, 스택 최상위 노드의 데이터와 우선순위 비교를 한다
+		// 연산자라면, 스택 최상위 노드의 데이터와 우선순위 비교를 한다
+        else if (isOperator(operator)) {
           if (!stack.isEmpty() && priority(stack.peek()) >= priority(operator)) {
             posFix+=stack.pop();
             posFix+=' ';
@@ -144,7 +155,7 @@ public static long tmpCal(long tmp1, long tmp2, char operator) {
 	}
 }
 
-public static long cal(String postFix) {	// 후위 수식을 공백을 기준으로 스플릿 한 뒤, 계산 수행
+public static long cal(String postFix) {
 	Stack<Long> stack = new Stack<>();
 	String[] splitPostFix = postFix.split(" ");
 	long tmp1,tmp2;
