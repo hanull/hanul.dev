@@ -5,13 +5,6 @@ category: algorithms
 draft: false
 ---
 
----
-title: Programmers_42586. 기능개발(java)
-date: 2020-06-22 19:06:60
-category: algorithms
-draft: false
----
-
 ### 문제
 [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/42588)
 
