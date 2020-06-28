@@ -69,3 +69,28 @@ public static int[] solution(int[] answers) {
 1. 세사람의 정답수를 모두 구하고 Max 값을 먼저 구한다.
 2. Max값과 같은 정답수를 가진 사람을 list에 저장한다.
 3. 저장된 list를 배열로 바꾸고 리턴해준다.
+
+```java
+  public static int[] solution(int[] answers) {
+    int[][] person = {{1,2,3,4,5},
+        {2,1,2,3,2,4,2,5},
+        {3,3,1,1,2,2,4,4,5,5}};
+    int[] score = new int[3];
+    int cnt;
+    for(int i=0; i<3; i++) {
+      cnt=0;
+      for (int number=0; number<answers.length; number++) {
+        if(person[i][number%person[i].length] == answers[number]) {
+          cnt++;
+        }
+      }
+      score[i] = cnt;
+    }
+    int maxValue = Math.max(score[0], Math.max(score[1], score[2]));
+    ArrayList<Integer> list = new ArrayList<>();
+    for(int i=0; i<3; i++) {
+      if(maxValue == score[i]) list.add(i+1);
+    }
+    return list.stream().mapToInt(i->i.intValue()).toArray();
+  }
+```
