@@ -13,7 +13,7 @@ draft: false
 만약 n, m이 10만 이상인 문제가 주어진다면 시간 초과가 발생할 것이다.
 
 
-이 문제를 O(N+M)의 시간 복잡도만으로 해결할 수 있는데, 이 방법이 KMP이다.
+이 문제를 O(N+M)의 시간 복잡도만으로 해결할 수 있는데, 이 방법이 `KMP`이다.
 
 KMP는 만든 사람의 이름인 Knuth, Morris, Prett 세 사람의 앞 글자를 따서 KMP(Knuth–Morris–Pratt Algorithm)이라고 불린다.
 
@@ -113,6 +113,6 @@ Found 위치 : 20
 
 
 ## 참고 자료
--[라이](https://blog.naver.com/kks227/220917078260)
--[kyungkoo jun youtube](https://www.youtube.com/watch?v=KXolmVUpUQQ)
--[bowbowbow](https://bowbowbow.tistory.com/6)
+- [라이](https://blog.naver.com/kks227/220917078260)
+- [kyungkoo jun youtube](https://www.youtube.com/watch?v=KXolmVUpUQQ)
+- [bowbowbow](https://bowbowbow.tistory.com/6)
