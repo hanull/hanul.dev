@@ -1,10 +1,9 @@
 ---
-title: [Java]배열을 어떻게 출력하는가? (toString, deepToString)
+title: 배열을 어떻게 출력하는가? (toString, deepToString) [Java]
 date: 2020-09-01 00:09:73
 category: java
 draft: false
 ---
-
 
 ```java
 public class Main {
