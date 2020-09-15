@@ -48,3 +48,29 @@ public class Main {
 }
 
 ```
+
+
+## 만약, LCS 문자열을 구하라고 했을 경우
+
+```java
+    int x = len1;
+    int y = len2;
+    int z = len3;
+    StringBuilder sb = new StringBuilder();
+    while (dp[x][y][z] != 0) {
+        if (dp[x - 1][y][z] == dp[x][y][z]) {
+            x--;
+        } else if (dp[x][y - 1][z] == dp[x][y][z]) {
+            y--;
+        } else if (dp[x][y][z - 1] == dp[x][y][z]) {
+            z--;
+        } else if (dp[x][y][z] - 1 == dp[x - 1][y - 1][z - 1]) {
+            sb.append(input1.charAt(x - 1));
+            x--; y--; z--;
+        }
+    }
+```
+
+```
+efg
+```
