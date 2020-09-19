@@ -62,8 +62,7 @@ draft: false
         hm.put("red", 1);
         hm.put("blue", 2);
 
-        LinkedHashMap<String, Integer> result = new LinkedHashMap<>();
-        LinkedList<Map.Entry<String, Integer>> entries = new LinkedList<>(hm.entrySet());
+        ArrayList<Map.Entry<String, Integer>> entries = new ArrayList<>(hm.entrySet());
         Collections.sort(entries, new Comparator<Map.Entry<String, Integer>>() {
             @Override
             public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
