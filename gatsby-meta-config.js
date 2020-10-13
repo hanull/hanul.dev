@@ -9,6 +9,7 @@
     github: `hanull`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
+    til: ``,
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [
