@@ -1,5 +1,5 @@
 ---
-title: 카카오 블라인드 문제 "문자열 압축" [java]
+title: 카카오 블라인드 문제 "문자열 압축" java
 date: 2020-09-01 00:09:01
 category: algorithms
 draft: false
