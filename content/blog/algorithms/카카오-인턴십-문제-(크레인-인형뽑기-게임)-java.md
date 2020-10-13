@@ -1,5 +1,5 @@
 ---
-title: 카카오 인턴십 문제 "크레인 인형뽑기 게임" java
+title: 카카오 인턴십 문제 (크레인 인형뽑기 게임) java
 date: 2020-08-31 16:08:47
 category: algorithms
 draft: false
