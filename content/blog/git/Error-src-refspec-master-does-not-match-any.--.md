@@ -1,5 +1,5 @@
 ---
-title: error: src refspec master does not match any.  
+title: Error src refspec master does not match any
 date: 2020-11-08 16:11:29
 category: git
 draft: false
