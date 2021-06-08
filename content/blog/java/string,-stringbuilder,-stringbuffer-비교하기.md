@@ -16,7 +16,7 @@ String, StringBuilder, StringBuffer 각각의 특성을 이해하고 어떤점�
 한 번 생성되면 변경될 수 없고, 할당된 메모리 공간이 변하지 않음을 의미한다.
 
 ```java
-String str = *new* String("hello");
+String str = new String("hello");
 
 str += " bye";
 ```
@@ -36,7 +36,7 @@ String은 불변성이라는 특성을 가지기 때문에 변하지 않는 문�
 String과 반대로 `가변성`을 가진다. 이미 생성된 문자열을 .append() .delete() 등을 사용하여 변경할 수 있다. 따라서 변경될 때마다 새롭게 객체를 생성하는 String 보다 더 빠르고, 이러한 장점 때문에 문자열의 추가,수정,삭제가 빈번하게 발생할 경우 StringBuffer/StringBuilder를 사용해야한다.
 
 ```java
-StringBuilder sb = *new* StringBuilder("hello");
+StringBuilder sb = new StringBuilder("hello");
 
 sb.append(" bye");
 ```
